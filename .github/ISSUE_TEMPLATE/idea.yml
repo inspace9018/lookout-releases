@@ -1,0 +1,16 @@
+name: 제안 · 의견
+description: 있었으면 하는 기능, 불편한 점, 문구가 어색한 곳
+labels: [feedback]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: 내용
+      description: 어떤 상황에서 무엇이 있으면 좋을지 적어 주세요.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Lookout 버전
+      placeholder: 0.1.4

@@ -1,0 +1,46 @@
+name: 버그 제보
+description: 잘못 나오거나, 안 나오거나, 멈추는 문제
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Lookout 버전
+      description: 대시보드 → 오버레이 설정 → 업데이트 칸에 나옵니다.
+      placeholder: 0.1.4
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: 어디서 생겼나요
+      options:
+        - 경기 시작 · 준비 단계
+        - 라인전 · 접힌 목록
+        - Tab 화면
+        - 상점
+        - 미니맵 · 정글 타이머
+        - 시간 알림
+        - 대시보드
+        - 설치 · 업데이트
+        - 기타
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: 무슨 일이 있었나요
+      description: 무엇이 나와야 했는데 무엇이 나왔는지. 경기 시간(예 6:30)을 알면 같이 적어 주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: screen
+    attributes:
+      label: 스크린샷
+      description: 게임 화면과 오버레이가 같이 보이게 찍어 주시면 가장 빨리 고칩니다. 끌어다 놓으면 첨부됩니다.
+  - type: input
+    id: setup
+    attributes:
+      label: 화면 설정
+      description: 해상도와 창 모드(창 / 테두리 없는 창)
+      placeholder: 2560×1440, 테두리 없는 창
